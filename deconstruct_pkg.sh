@@ -40,7 +40,7 @@ download_file(){
 
 # Variables
 LIBS_URL="https://cran.r-project.org/bin/macosx/"
-R_INSTALLER="R-3.5.1.pkg"
+R_INSTALLER="R-3.5.2.pkg"
 
 # Download to the working directory
 download_file $LIBS_URL $R_INSTALLER
