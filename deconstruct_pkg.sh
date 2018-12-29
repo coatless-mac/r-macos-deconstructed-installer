@@ -52,9 +52,11 @@ pkgutil --expand $R_INSTALLER r-pkg
 tree r-pkg
 
 # Create directory to store package scripts
-mkdir r-pkg-scripts
+if [[ ! -d "Scripts" ]]; then
+mkdir Scripts
+fi
 
 # Copy out the R component scripts
-cp r-pkg/r.pkg/Scripts/* r-pkg-scripts
+cp r-pkg/r.pkg/Scripts/* Scripts
 
 
