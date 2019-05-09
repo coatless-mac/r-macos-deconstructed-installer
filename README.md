@@ -19,32 +19,32 @@ Contents” on the right click context menu.
 
 ### Installer File Archive Overview
 
-Summary of macOS R installer for R-3.5.2 taken on 2018-12-29.
+Summary of macOS R installer for R-3.5.3 taken on 2019-05-09.
 
     tree r-pkg
 
-    ## r-pkg
+    ## [01;34mr-pkg[00m
     ## ├── Distribution
-    ## ├── Resources
-    ## │   └── en.lproj
+    ## ├── [01;34mResources[00m
+    ## │   └── [01;34men.lproj[00m
     ## │       └── background
-    ## ├── r-1.pkg
+    ## ├── [01;34mr-1.pkg[00m
     ## │   ├── Bom
     ## │   ├── PackageInfo
     ## │   └── Payload
-    ## ├── r.pkg
+    ## ├── [01;34mr.pkg[00m
     ## │   ├── Bom
     ## │   ├── PackageInfo
     ## │   ├── Payload
-    ## │   └── Scripts
-    ## │       ├── postflight
-    ## │       ├── postflight~
-    ## │       └── postinstall
-    ## ├── tcltk8.pkg
+    ## │   └── [01;34mScripts[00m
+    ## │       ├── [01;32mpostflight[00m
+    ## │       ├── [01;32mpostflight~[00m
+    ## │       └── [01;32mpostinstall[00m
+    ## ├── [01;34mtcltk8.pkg[00m
     ## │   ├── Bom
     ## │   ├── PackageInfo
     ## │   └── Payload
-    ## └── texinfo5.pkg
+    ## └── [01;34mtexinfo5.pkg[00m
     ##     ├── Bom
     ##     ├── PackageInfo
     ##     └── Payload
