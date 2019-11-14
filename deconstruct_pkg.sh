@@ -28,9 +28,9 @@
 #2 File name
 download_file(){
 	if [ -f "$2" ]; then
-		echo "$2 has already been downloaded..."
+		echo "[note] $2 has already been downloaded..."
 	else 
-		echo "Downloading file $2 ... Please be patient..."	
+		echo "[status] Downloading file $2 ... Please be patient..."	
 		# Download file into working directory
 		curl -O $1$2
 	fi
@@ -40,10 +40,19 @@ download_file(){
 
 # Variables
 LIBS_URL="https://cran.r-project.org/bin/macosx/"
-R_INSTALLER="R-3.6.0.pkg"
+R_INSTALLER="R-3.6.1.pkg"
+
+if [[ -d "r-pkg" ]]; then
+echo "[del] Removing old r-pkg folder"
+rm -rf r-pkg
+fi
+
+echo "[init] Downloading new R installer"
 
 # Download to the working directory
 download_file $LIBS_URL $R_INSTALLER
+
+echo "[extract] Expand the R installer"
 
 # Split apart the downloaded package
 pkgutil --expand $R_INSTALLER r-pkg

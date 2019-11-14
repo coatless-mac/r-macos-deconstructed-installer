@@ -19,7 +19,7 @@ Contents” on the right click context menu.
 
 ### Installer File Archive Overview
 
-Summary of macOS R installer for R-3.6.0 taken on 2019-05-09.
+Summary of macOS R installer for R-3.6.1 taken on 2019-11-13.
 
     tree r-pkg
 
